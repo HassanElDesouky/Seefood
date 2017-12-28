@@ -12,6 +12,7 @@
 		9AF57DF61FF484960027F13E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AF57DF41FF484960027F13E /* Main.storyboard */; };
 		9AF57DF81FF484960027F13E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AF57DF71FF484960027F13E /* Assets.xcassets */; };
 		9AF57DFB1FF484960027F13E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AF57DF91FF484960027F13E /* LaunchScreen.storyboard */; };
+		9AF57E071FF486370027F13E /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9AF57E061FF486370027F13E /* Inceptionv3.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		9AF57DF71FF484960027F13E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AF57DFA1FF484960027F13E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9AF57DFC1FF484960027F13E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AF57E061FF486370027F13E /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,47 @@
 		9AF57DEF1FF484960027F13E /* Seefood */ = {
 			isa = PBXGroup;
 			children = (
-				9AF57DF01FF484960027F13E /* AppDelegate.swift */,
-				9AF57DF21FF484960027F13E /* ViewController.swift */,
-				9AF57DF41FF484960027F13E /* Main.storyboard */,
-				9AF57DF71FF484960027F13E /* Assets.xcassets */,
-				9AF57DF91FF484960027F13E /* LaunchScreen.storyboard */,
-				9AF57DFC1FF484960027F13E /* Info.plist */,
+				9AF57E041FF484BD0027F13E /* Control */,
+				9AF57E031FF484B80027F13E /* View */,
+				9AF57E021FF484B20027F13E /* Model */,
+				9AF57E051FF485060027F13E /* Supported files */,
 			);
 			path = Seefood;
+			sourceTree = "<group>";
+		};
+		9AF57E021FF484B20027F13E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9AF57E061FF486370027F13E /* Inceptionv3.mlmodel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9AF57E031FF484B80027F13E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9AF57DF41FF484960027F13E /* Main.storyboard */,
+				9AF57DF91FF484960027F13E /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9AF57E041FF484BD0027F13E /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				9AF57DF01FF484960027F13E /* AppDelegate.swift */,
+				9AF57DF21FF484960027F13E /* ViewController.swift */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		9AF57E051FF485060027F13E /* Supported files */ = {
+			isa = PBXGroup;
+			children = (
+				9AF57DF71FF484960027F13E /* Assets.xcassets */,
+				9AF57DFC1FF484960027F13E /* Info.plist */,
+			);
+			path = "Supported files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AF57DF31FF484960027F13E /* ViewController.swift in Sources */,
+				9AF57E071FF486370027F13E /* Inceptionv3.mlmodel in Sources */,
 				9AF57DF11FF484960027F13E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,12 +312,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UC8UZFR7L3;
-				INFOPLIST_FILE = Seefood/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Seefood/Supported files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.heldesouky.Seefood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -291,12 +327,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UC8UZFR7L3;
-				INFOPLIST_FILE = Seefood/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Seefood/Supported files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.heldesouky.Seefood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
